@@ -1,0 +1,21 @@
+
+
+import express from 'express'
+import multer from 'multer'
+import { askQuestions, uploadDocuments } from '../controllers/document.controller.js';
+
+
+const router = express.Router();
+
+
+
+const upload = multer({storage : multer.memoryStorage()});
+
+
+
+router.post("/upload",upload.single('pdf'),uploadDocuments);
+router.post("/ask",askQuestions)
+
+
+
+export default router

@@ -107,7 +107,7 @@ PORT	Port where backend runs
 
 Example .env.local for Next.js:
 
-NEXT_PUBLIC_BACKEND_URL=https://your-backend-domain/api/v1
+NEXT_PUBLIC_BACKEND_URL=http://13.233.116.205:4000/api/v1
 
 ❗ CORS & HTTPS Notes
 
